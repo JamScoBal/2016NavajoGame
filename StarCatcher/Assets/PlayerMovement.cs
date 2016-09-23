@@ -10,13 +10,30 @@ public class PlayerMovement : MonoBehaviour
     public float jumpSpeed = 1.0f;
     public int jumpCount = 0;
     public int jumpCountMax = 1;
+    public int slideDuration = 100;
+    public float slideTime = 0.1f;
 
     void Start ()
     {
         myCC = GetComponent<CharacterController>();
     }
 	
-	
+	IEnumerator Slide ()
+    {
+        int durationTemp = slideDuration;
+        float speedTemp = speed;
+
+        while (slideDuration > 0)
+        {
+            speed += speed;
+            slideDuration--;
+            yield return new WaitForSeconds(slideTime);
+        }
+        speed = speedTemp;
+        slideDuration = durationTemp;
+    }
+
+
 	void Update ()
     {
         if(Input.GetKeyDown(KeyCode.Space) && jumpCount < jumpCountMax)
@@ -29,6 +46,15 @@ public class PlayerMovement : MonoBehaviour
             jumpCount = 0;
         }
         
+        if(Input.GetKey(KeyCode.RightArrow) && Input.GetKeyDown(KeyCode.S))
+        {
+            StartCoroutine(Slide());
+        }
+
+        if (Input.GetKey(KeyCode.LeftArrow) && Input.GetKeyDown(KeyCode.S))
+        {
+            StartCoroutine(Slide());
+        }
 
         tempPos.y -= gravity;
         tempPos.x = speed*Input.GetAxis("Horizontal");
