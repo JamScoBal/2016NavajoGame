@@ -19,8 +19,8 @@ TagManager:
   - Recycle
   - Ground
   - Player
-  - 
-  - 
+  - EnemyToGround
+  - EnemyToPlayer
   - 
   - 
   - 

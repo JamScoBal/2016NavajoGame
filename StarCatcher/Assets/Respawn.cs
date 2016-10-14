@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagment;
 
 public class Respawn : MonoBehaviour {
 
@@ -10,5 +11,10 @@ public class Respawn : MonoBehaviour {
         {
             Application.LoadLevel(0);
         }
+    }
+
+    void Start ()
+    {
+        StaticBars.distance = StaticBars.newLevelPosition;
     }
 }

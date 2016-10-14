@@ -60,4 +60,5 @@ public class PlayerMovement : MonoBehaviour
         tempPos.x = speed*Input.GetAxis("Horizontal");
         myCC.Move(tempPos * Time.deltaTime);
 	}
+
 }

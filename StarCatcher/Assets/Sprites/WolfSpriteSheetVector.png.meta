@@ -1,17 +1,17 @@
 fileFormatVersion: 2
-guid: a64fb2c0bea6f404980c5d90f0431840
-timeCreated: 1475772917
+guid: 0a453df5144eec540b6fd18897b40172
+timeCreated: 1476291154
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: WolfSpriteSheet_0
-    21300002: WolfSpriteSheet_1
-    21300004: WolfSpriteSheet_2
-    21300006: WolfSpriteSheet_3
-    21300008: WolfSpriteSheet_4
-    21300010: WolfSpriteSheet_5
-    21300012: WolfSpriteSheet_6
-    21300014: WolfSpriteSheet_7
+    21300000: WolfSpriteSheetVector_0
+    21300002: WolfSpriteSheetVector_1
+    21300004: WolfSpriteSheetVector_2
+    21300006: WolfSpriteSheetVector_3
+    21300008: WolfSpriteSheetVector_4
+    21300010: WolfSpriteSheetVector_5
+    21300012: WolfSpriteSheetVector_6
+    21300014: WolfSpriteSheetVector_7
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -34,10 +34,10 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: 0
+    filterMode: -1
     aniso: 16
     mipBias: -1
     wrapMode: 1
@@ -48,8 +48,8 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
-  spritePivot: {x: .5, y: 0}
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -57,85 +57,85 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: WolfSpriteSheet_0
+    - name: WolfSpriteSheetVector_0
       rect:
         serializedVersion: 2
-        x: 43
-        y: 604
-        width: 253
-        height: 157
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 45
+        y: 206
+        width: 251
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WolfSpriteSheet_1
+    - name: WolfSpriteSheetVector_1
       rect:
         serializedVersion: 2
-        x: 386
-        y: 609
-        width: 262
-        height: 152
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 388
+        y: 210
+        width: 261
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WolfSpriteSheet_2
+    - name: WolfSpriteSheetVector_2
       rect:
         serializedVersion: 2
-        x: 20
-        y: 412
-        width: 291
-        height: 157
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 723
+        y: 213
+        width: 289
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WolfSpriteSheet_3
+    - name: WolfSpriteSheetVector_3
       rect:
         serializedVersion: 2
-        x: 365
-        y: 407
-        width: 328
-        height: 163
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 1063
+        y: 209
+        width: 330
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WolfSpriteSheet_4
+    - name: WolfSpriteSheetVector_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 207
+        y: 9
         width: 350
-        height: 163
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WolfSpriteSheet_5
+    - name: WolfSpriteSheetVector_5
       rect:
         serializedVersion: 2
-        x: 352
-        y: 208
-        width: 337
-        height: 153
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 356
+        y: 9
+        width: 334
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WolfSpriteSheet_6
+    - name: WolfSpriteSheetVector_6
       rect:
         serializedVersion: 2
-        x: 7
-        y: 7
+        x: 709
+        y: 8
         width: 321
-        height: 143
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: WolfSpriteSheet_7
+    - name: WolfSpriteSheetVector_7
       rect:
         serializedVersion: 2
-        x: 377
-        y: 7
-        width: 282
-        height: 148
-      alignment: 7
-      pivot: {x: .5, y: 0}
+        x: 1079
+        y: 9
+        width: 281
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
