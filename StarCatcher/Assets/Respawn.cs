@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagment;
+using UnityEngine.SceneManagement;
 
 public class Respawn : MonoBehaviour {
 
