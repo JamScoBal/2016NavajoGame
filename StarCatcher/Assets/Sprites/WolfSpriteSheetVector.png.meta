@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 0a453df5144eec540b6fd18897b40172
-timeCreated: 1476291154
+timeCreated: 1476642376
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -65,7 +65,7 @@ TextureImporter:
         width: 251
         height: 153
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}
     - name: WolfSpriteSheetVector_1
       rect:

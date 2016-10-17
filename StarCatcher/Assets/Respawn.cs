@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.SceneManagement;
 
 public class Respawn : MonoBehaviour {
 
@@ -9,12 +8,13 @@ public class Respawn : MonoBehaviour {
     {
         if(other.gameObject.tag == "Player")
         {
-            Application.LoadLevel(0);
+            Application.LoadLevel(1);
         }
     }
 
     void Start ()
     {
-        StaticBars.distance = StaticBars.newLevelPosition;
+        // StaticBars.distance = 6;
+        StaticBars.nextSectionPosition = 0;
     }
 }
