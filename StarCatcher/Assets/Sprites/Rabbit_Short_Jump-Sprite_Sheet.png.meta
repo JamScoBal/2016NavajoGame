@@ -1,0 +1,143 @@
+fileFormatVersion: 2
+guid: 217572846fbe41944ba83209ff36a685
+timeCreated: 1476809261
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Rabbit_Short_Jump-Sprite_Sheet_0
+    21300002: Rabbit_Short_Jump-Sprite_Sheet_1
+    21300004: Rabbit_Short_Jump-Sprite_Sheet_2
+    21300006: Rabbit_Short_Jump-Sprite_Sheet_3
+    21300008: Rabbit_Short_Jump-Sprite_Sheet_4
+    21300010: Rabbit_Short_Jump-Sprite_Sheet_5
+    21300012: Rabbit_Short_Jump-Sprite_Sheet_6
+    21300014: Rabbit_Short_Jump-Sprite_Sheet_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Rabbit_Short_Jump-Sprite_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 263
+        width: 195
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rabbit_Short_Jump-Sprite_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 262
+        width: 196
+        height: 100
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rabbit_Short_Jump-Sprite_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 262
+        width: 183
+        height: 128
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rabbit_Short_Jump-Sprite_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 262
+        width: 178
+        height: 218
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rabbit_Short_Jump-Sprite_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 45
+        width: 201
+        height: 185
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rabbit_Short_Jump-Sprite_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 48
+        width: 205
+        height: 180
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rabbit_Short_Jump-Sprite_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 42
+        width: 198
+        height: 150
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Rabbit_Short_Jump-Sprite_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 40
+        width: 195
+        height: 106
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
