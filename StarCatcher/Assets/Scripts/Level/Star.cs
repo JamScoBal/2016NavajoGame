@@ -9,7 +9,7 @@ public class Star : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
-        SendStar(Transform);
+        SendStar(transform);
         GetComponent<MeshRenderer>().enabled = true;
     }
 

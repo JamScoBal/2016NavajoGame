@@ -15,11 +15,11 @@ public class StarControll : MonoBehaviour {
 
     void StarHandler(Transform _t)
     {
-        stas.Add(_t);
+        stars.Add(_t);
     }
     // Use this for initialization
     void Start () {
-        StarSpawner.SendSpawner += SpawnHandler;
+        SpawnStar.SendSpawner += SpawnHandler;
         Star.SendStar += StarHandler;
         StartCoroutine(Spawn());
 	}

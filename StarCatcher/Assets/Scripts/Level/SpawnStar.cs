@@ -8,7 +8,7 @@ public class SpawnStar : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        SendSpawner(Transform);
+        SendSpawner(transform);
 	}
 
 }

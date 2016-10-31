@@ -11,11 +11,9 @@ public class DestroyStar : MonoBehaviour {
     public float torqueRange = 2;
     private Vector3 forceVector;
     private Vector3 torqueVector;
-    private Animator anims;
 
     void Start()
     {
-        anims = GetComponent<Animator>();
         rigid = GetComponent<Rigidbody>();
         StartCoroutine(RunRandomForce());
     }
@@ -35,17 +33,6 @@ public class DestroyStar : MonoBehaviour {
     }
 
     public float endTime = 3;
-
-    public void Deativate ()
-    {
-        anims.SetBool("Destroy", false);
-        gameObject.SetActive(false);
-    }
-
-    void OnCollisionEnter()
-    {
-        anims.SetBool("Destroy", true);
-    }
 
 	
 }
