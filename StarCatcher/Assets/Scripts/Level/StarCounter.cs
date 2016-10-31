@@ -4,10 +4,16 @@ using System.Collections;
 
 public class StarCounter : MonoBehaviour {
 
-    public int starCount = 0;
+    public int starCount;
+    public Text starText;
 	
 	// Update is called once per frame
 	void Update () {
-        GetComponent<Text>().text = starCount.ToString();
+        starText.text = ("X " + starCount);
 	}
+
+    public void AddPoints(int points)
+    {
+        starCount += points;
+    }
 }

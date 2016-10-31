@@ -5,17 +5,18 @@ public class PlayerMovement : MonoBehaviour
 {
     private CharacterController myCC;
     private Vector3 tempPos;
-    public float speed = 10.0f;
+    public float speed = 5.0f;
     public float gravity = 1.0f;
     public float jumpSpeed = 1.0f;
     public int jumpCount = 0;
     public int jumpCountMax = 1;
     public int slideDuration = 100;
     public float slideTime = 0.1f;
-
+   
     void Start ()
     {
         myCC = GetComponent<CharacterController>();
+
     }
 	
 	IEnumerator Slide ()
@@ -61,4 +62,5 @@ public class PlayerMovement : MonoBehaviour
         myCC.Move(tempPos * Time.deltaTime);
 	}
 
+  
 }

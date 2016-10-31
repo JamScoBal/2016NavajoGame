@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Killzone
   - player
+  - StarCounter
+  - Star
+  - Score
   layers:
   - Default
   - TransparentFX
