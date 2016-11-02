@@ -1,14 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System;
 
-public class SpawnStar : MonoBehaviour {
+public class SpawnStar : MonoBehaviour
+{
 
-    public static Action<Transform> SendSpawner;
+    public Transform[] spawnPoints;
+    public Transform star;
+    public float spawnFrequency = 1;
+    public bool canSpawnStars = true;
 
-	// Use this for initialization
-	void Start () {
-        SendSpawner(transform);
-	}
+    private int i = 0;
+
+    IEnumerator SpawnStars()
+    {
+        while (canSpawnStars)
+        {
+            i = Random.Range(0, spawnPoints.Length - 1);
+            print(spawnPoints.Length);
+            Instantiate(star, spawnPoints[i].position, Quaternion.identity);
+            yield return new WaitForSeconds(spawnFrequency);
+        }
+    }
+    void Start()
+    {
+    StartCoroutine(SpawnStars());
+    }
 
 }

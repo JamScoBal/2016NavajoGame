@@ -1,57 +1,42 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
 
-public class StarControll : MonoBehaviour {
+public class StarControll : MonoBehaviour
+{
 
 
-    public List<Transform> spawner;
-    public List<Transform> stars;
+    public int forceTime = 10;
+    public float forceDuration = 0.1f;
+    private Rigidbody rigid;
+    public float forceRange = 10;
+    public float torqueRange = 2;
+    private Vector3 forceVector;
+    private Vector3 torqueVector;
 
-    void SpawnHandler (Transform _t)
+    void Start()
     {
-        spawner.Add(_t);
+        rigid = GetComponent<Rigidbody>();
+        StartCoroutine(RunRandomForce());
     }
 
-    void StarHandler(Transform _t)
+    IEnumerator RunRandomForce()
     {
-        stars.Add(_t);
-    }
-    // Use this for initialization
-    void Start () {
-        SpawnStar.SendSpawner += SpawnHandler;
-        Star.SendStar += StarHandler;
-        StartCoroutine(Spawn());
-	}
-
-    private bool canSpawn = true;
-
-    private int starNum;
-    private int spawnerNum;
-
-	IEnumerator Spawn ()
-    {
-        while(canSpawn)
+       
+        while (forceTime > 0)
         {
-            yield return new WaitForSeconds(1);
-            stars[starNum].position = spawner[0].position;
-            stars[starNum].GetComponent<MeshRenderer>().enabled = true;
-            if(starNum > stars.Count - 1)
-            {
-                starNum++;
-            } else
-            {
-                starNum = 0;
-            }
-            if (spawnerNum > stars.Count - 1)
-            {
-                spawnerNum++;
-            }
-            else
-            {
-                spawnerNum = 0;
-            }
+            yield return new WaitForSeconds(forceDuration);
+            forceVector.x = Random.Range(-forceRange, forceRange);
+            torqueVector.z = Random.Range(-torqueRange, torqueRange);
+            rigid.AddTorque(torqueVector);
+            rigid.AddForce(forceVector);
+            forceTime--;
         }
-        
+    }
+
+    public float endTime = 3;
+
+	void OnCollisionEnter()
+    {
+        Destroy(gameObject, endTime);
     }
 }
