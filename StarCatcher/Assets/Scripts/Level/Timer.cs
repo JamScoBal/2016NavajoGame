@@ -4,7 +4,7 @@ using System.Collections;
 
 public class Timer : MonoBehaviour {
 
-    public float myTimer = 180;
+    public static float myTimer = 180;
     private Text timerText;
 
 	// Use this for initialization
@@ -18,6 +18,6 @@ public class Timer : MonoBehaviour {
         string minutes = ((int)myTimer / 60).ToString();
         string seconds = (myTimer % 60).ToString("f0");
         timerText.text = minutes + ":" + seconds;
-
+        
 	}
 }

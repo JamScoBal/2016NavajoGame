@@ -4,11 +4,11 @@ using System.Collections;
 
 public class Lives : MonoBehaviour {
 
-    public int PlayerLives = 3;
+    public static int PlayerLives = 4;
 
 	// Use this for initialization
 	void Start () {
-	
+        PlayerLives--;
 	}
 	
 	// Update is called once per frame

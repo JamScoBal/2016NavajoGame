@@ -4,7 +4,7 @@ using System.Collections;
 
 public class StarCounter : MonoBehaviour {
 
-    public int starCount;
+    public static int starCount;
     public Text starText;
 	
 	// Update is called once per frame
@@ -12,8 +12,4 @@ public class StarCounter : MonoBehaviour {
         starText.text = ("X " + starCount);
 	}
 
-    public void AddPoints(int points)
-    {
-        starCount += points;
-    }
 }

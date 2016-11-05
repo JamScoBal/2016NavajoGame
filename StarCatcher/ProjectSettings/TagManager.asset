@@ -9,6 +9,7 @@ TagManager:
   - StarCounter
   - Star
   - Score
+  - StarHelper
   layers:
   - Default
   - TransparentFX
@@ -25,7 +26,7 @@ TagManager:
   - EnemyToGround
   - EnemyToPlayer
   - BackButton
-  - 
+  - Star
   - 
   - 
   - 

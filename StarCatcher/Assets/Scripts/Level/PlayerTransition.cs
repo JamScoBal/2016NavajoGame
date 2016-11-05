@@ -30,7 +30,23 @@ public class PlayerTransition : MonoBehaviour {
         {
             anim.SetInteger("Change", 0);
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            anim.SetInteger("Change", 1);
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            anim.SetInteger("Change", 1);
+        }
+        if (Input.GetKeyUp(KeyCode.D))
+        {
+            anim.SetInteger("Change", 0);
+        }
+        if (Input.GetKeyUp(KeyCode.A))
+        {
+            anim.SetInteger("Change", 0);
+        }
+            if (Input.GetKeyDown(KeyCode.Space))
         {
             anim.SetInteger("Change", 2);
         }
