@@ -87,7 +87,7 @@ NavMeshSettings:
     minRegionArea: 2
     cellSize: .170000002
     manualCellSize: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 8c3364a78812f8743b9f9892a0194b6e, type: 2}
 --- !u!1 &92054484 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: c7bd40630a898a747a2c86bf24bde700, type: 3}
@@ -2525,6 +2525,7 @@ GameObject:
   - 65: {fileID: 1017726020}
   - 23: {fileID: 1017726019}
   - 114: {fileID: 1017726023}
+  - 195: {fileID: 1017726024}
   m_Layer: 0
   m_Name: Agent
   m_TagString: Untagged
@@ -2601,6 +2602,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myAgent: {fileID: 672454972}
   Player: {fileID: 1662013528}
+--- !u!195 &1017726024
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1017726018}
+  m_Enabled: 1
+  m_Radius: .5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: .5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!4 &1086989176 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400020, guid: c68ac246b6666934cadffde471a3febc, type: 3}
@@ -4262,7 +4283,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!23 &1742725615
 MeshRenderer:
@@ -4314,8 +4335,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1742725614}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106829}
-  m_LocalPosition: {x: 295, y: 14, z: 0}
-  m_LocalScale: {x: 677.454529, y: 1, z: 1}
+  m_LocalPosition: {x: 295, y: 14, z: -.300000012}
+  m_LocalScale: {x: 677.454529, y: 2.95002842, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
