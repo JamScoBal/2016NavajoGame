@@ -1,24 +1,17 @@
 fileFormatVersion: 2
-guid: f59be762af8f01243a9ff1bbafdc52c4
-timeCreated: 1475954718
+guid: 2a756215d2bdb7c4392286bc5348a8ce
+timeCreated: 1478630025
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: pPlane1
-    100004: default
-    400000: //RootNode
-    400002: pPlane1
-    400004: default
-    2300000: pPlane1
-    2300002: default
-    3300000: pPlane1
-    3300002: default
-    4300000: pPlane1
-    4300002: default
-    6400000: pPlane1
-    6400002: default
+    100000: default
+    100002: //RootNode
+    400000: default
+    400002: //RootNode
+    2300000: default
+    3300000: default
+    4300000: default
   materials:
     importMaterials: 1
     materialName: 0
@@ -40,7 +33,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
