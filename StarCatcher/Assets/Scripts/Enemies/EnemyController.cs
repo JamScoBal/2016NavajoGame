@@ -14,7 +14,7 @@ public class EnemyController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        tempPOS.y -= gravity * Time.deltaTime;
+        tempPOS.y = -gravity * Time.deltaTime;
         myCC.Move(tempPOS);
 	}
 }
