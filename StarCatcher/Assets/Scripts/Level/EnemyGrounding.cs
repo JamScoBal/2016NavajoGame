@@ -2,12 +2,11 @@
 using System.Collections;
 
 [RequireComponent(typeof(CharacterController))]
-public class Grounding : MonoBehaviour {
+public class EnemyGrounding : MonoBehaviour {
     
     private CharacterController cc;
-    private float gravity = 1;
+    public float gravity = 2;
     private Vector3 tempP;
-    public Transform Player;
 
 	// Use this for initialization
 	void Start () {
@@ -18,5 +17,13 @@ public class Grounding : MonoBehaviour {
 	void Update () {
         tempP.y = -gravity;
         cc.Move(tempP * Time.deltaTime);
+
+        if(cc.isGrounded)
+        {
+            tempP.x = gravity;
+        }else
+        {
+            tempP.x = 0;
+        }
 	}
 }

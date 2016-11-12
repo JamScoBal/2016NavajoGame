@@ -22,5 +22,13 @@ public class FlipPlayer : MonoBehaviour {
         {
             FlipCharacter(true);
         }
+        if (Input.GetKeyDown(KeyCode.D) && forward)
+        {
+            FlipCharacter(false);
+        }
+        if (Input.GetKeyDown(KeyCode.A) && !forward)
+        {
+            FlipCharacter(true);
+        }
     }
 }

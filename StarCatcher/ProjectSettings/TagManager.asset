@@ -10,6 +10,7 @@ TagManager:
   - Star
   - Score
   - StarHelper
+  - Enemy
   layers:
   - Default
   - TransparentFX
