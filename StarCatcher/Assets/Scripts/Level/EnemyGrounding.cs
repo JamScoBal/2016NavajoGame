@@ -6,10 +6,13 @@ public class EnemyGrounding : MonoBehaviour {
     
     private CharacterController cc;
     public float gravity = 2;
+    public float MySpeed = 2;
     private Vector3 tempP;
+    public Transform Front;
+    public Transform Back;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
         cc = GetComponent<CharacterController>();
 	}
 	
@@ -18,12 +21,13 @@ public class EnemyGrounding : MonoBehaviour {
         tempP.y = -gravity;
         cc.Move(tempP * Time.deltaTime);
 
-        if(cc.isGrounded)
+        if (Front.GetComponent<Collider>())
         {
-            tempP.x = gravity;
-        }else
+            tempP.x = Mathf.Abs(MySpeed);
+        }
+        else if(Back.GetComponent<Collider>())
         {
-            tempP.x = 0;
+            tempP.x = Mathf.Abs(MySpeed) * -1;
         }
 	}
 }

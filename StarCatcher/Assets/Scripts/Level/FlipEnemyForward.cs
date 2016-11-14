@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FlipEnemy : MonoBehaviour
+public class FlipEnemyForward : MonoBehaviour
 {
 
     public Transform characterControl;
@@ -17,9 +17,9 @@ public class FlipEnemy : MonoBehaviour
     void OnTiggerEnter (Collider other)
     {
         print("triggered");
-        if (other.gameObject.tag == "Player" && !forward)
+        if (other.gameObject.tag == "Player" && forward)
         {
-            FlipCharacter(true);
+            FlipCharacter(false);
         }
     }
 }
