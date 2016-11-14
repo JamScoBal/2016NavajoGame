@@ -13,7 +13,7 @@ public class FlipEnemyBackward : MonoBehaviour {
     }
 
     // Update is called once per frame
-    void OnTiggerEnter(Collider other)
+    void OnCharacterControllerHit(Collider other)
     {
         print("triggered");
         if (other.gameObject.tag == "Player" && !forward)
