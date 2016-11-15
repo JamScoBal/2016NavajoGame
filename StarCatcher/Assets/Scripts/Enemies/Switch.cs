@@ -6,7 +6,7 @@ public class Switch : MonoBehaviour {
     public Transform Wolf;
     private float Opposite = -1;
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerExit(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
