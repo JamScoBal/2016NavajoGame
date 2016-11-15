@@ -14,7 +14,6 @@ public class Respawn : MonoBehaviour {
 
     void Start ()
     {
-        // StaticBars.distance = 6;
         StaticBars.nextSectionPosition = 0;
     }
 }

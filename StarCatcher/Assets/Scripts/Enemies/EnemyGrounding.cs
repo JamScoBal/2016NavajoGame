@@ -6,10 +6,8 @@ public class EnemyGrounding : MonoBehaviour {
     
     private CharacterController cc;
     public float gravity = 2;
-    public float MySpeed = 2;
     private Vector3 tempP;
-    public Transform Front;
-    public Transform Back;
+    public float Speed = 2.0f;
 
     // Use this for initialization
     void Start () {
@@ -21,13 +19,6 @@ public class EnemyGrounding : MonoBehaviour {
         tempP.y = -gravity;
         cc.Move(tempP * Time.deltaTime);
 
-        if (Front.GetComponent<Collider>())
-        {
-            tempP.x = Mathf.Abs(MySpeed);
-        }
-        else if(Back.GetComponent<Collider>())
-        {
-            tempP.x = Mathf.Abs(MySpeed) * -1;
-        }
-	}
+        tempP.x = Speed;
+    }
 }
