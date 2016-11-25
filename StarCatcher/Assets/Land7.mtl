@@ -1,0 +1,31 @@
+newmtl RockSmall1:lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd TexturesCom_RocksArid0143_2_seamless_S.jpg
+Ni 1.00
+newmtl SmallCactus:lambert2SG
+illum 4
+Kd 0.22 1.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl SmallCactus:lambert3SG
+illum 4
+Kd 1.00 0.14 0.43
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl SmallCactus:lambert4SG
+illum 4
+Kd 0.96 1.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.02 1.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
