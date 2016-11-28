@@ -3,13 +3,27 @@ using System.Collections;
 
 public class DestroyStar : MonoBehaviour
 {
+    public ParticleSystem Burst;
+    public ParticleSystem Flash;
+    public Transform star;
 
-    public float endTime = 3;
-
-	void OnCollisionEnter()
+    IEnumerator Boom()
     {
-        Destroy(gameObject, endTime);
+        yield return new WaitForSeconds(2.9f);
+        Burst.Play();
+        Flash.Play();
     }
 
+    void OnCollisionEnter()
+    {
+        StartCoroutine(Boom());
+        StartCoroutine(Die());
+        print("Touchdown!");
+    }
 
+    IEnumerator Die()
+    {
+        yield return new WaitForSeconds(3);
+        gameObject.SetActive(false);
+    }
 }

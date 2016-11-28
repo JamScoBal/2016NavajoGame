@@ -14,5 +14,10 @@ public class Lives : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         GetComponent<Text>().text = PlayerLives.ToString();
+
+        if(PlayerLives < 0)
+        {
+            Application.LoadLevel(2);
+        }
 	}
 }

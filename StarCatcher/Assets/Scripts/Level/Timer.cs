@@ -19,5 +19,9 @@ public class Timer : MonoBehaviour {
         string seconds = (myTimer % 60).ToString("f0");
         timerText.text = minutes + ":" + seconds;
         
+        if(myTimer < 0)
+        {
+            Application.LoadLevel(2);
+        }
 	}
 }
