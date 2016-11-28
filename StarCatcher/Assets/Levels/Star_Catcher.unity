@@ -317,19 +317,31 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 19854644, guid: 7110624df41132848b00de256760d6be, type: 2}
       propertyPath: InitialModule.startLifetime.minMaxState
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 19854644, guid: 7110624df41132848b00de256760d6be, type: 2}
       propertyPath: InitialModule.startLifetime.scalar
-      value: .100000001
+      value: .200000003
       objectReference: {fileID: 0}
     - target: {fileID: 19801458, guid: 7110624df41132848b00de256760d6be, type: 2}
       propertyPath: InitialModule.startSize.scalar
-      value: 1.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 19801458, guid: 7110624df41132848b00de256760d6be, type: 2}
       propertyPath: EmissionModule.enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19854644, guid: 7110624df41132848b00de256760d6be, type: 2}
+      propertyPath: InitialModule.startLifetime.minCurve.m_Curve.Array.data[0].value
+      value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 19854644, guid: 7110624df41132848b00de256760d6be, type: 2}
+      propertyPath: InitialModule.startLifetime.maxCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19801458, guid: 7110624df41132848b00de256760d6be, type: 2}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: .100000001
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7110624df41132848b00de256760d6be, type: 2}
@@ -1266,7 +1278,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 639071533}
-  - 114: {fileID: 639071532}
   - 54: {fileID: 639071534}
   m_Layer: 0
   m_Name: StarSpawner 1
@@ -1275,22 +1286,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &639071532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 639071531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b03e1b9864ea6c246aca1653e5e36a79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceTime: 10
-  forceDuration: .100000001
-  forceRange: 10
-  torqueRange: 2
-  endTime: 3
 --- !u!4 &639071533
 Transform:
   m_ObjectHideFlags: 0
@@ -1326,7 +1321,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 639813978}
-  - 114: {fileID: 639813979}
   - 54: {fileID: 639813980}
   m_Layer: 0
   m_Name: StarSpawner 4
@@ -1347,22 +1341,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1457939191}
   m_RootOrder: 4
---- !u!114 &639813979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 639813977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b03e1b9864ea6c246aca1653e5e36a79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceTime: 10
-  forceDuration: .100000001
-  forceRange: 10
-  torqueRange: 2
-  endTime: 3
 --- !u!54 &639813980
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3587,7 +3565,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1315024472}
-  - 114: {fileID: 1315024473}
   - 54: {fileID: 1315024474}
   m_Layer: 0
   m_Name: StarSpawner 3
@@ -3608,22 +3585,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1457939191}
   m_RootOrder: 3
---- !u!114 &1315024473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1315024471}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b03e1b9864ea6c246aca1653e5e36a79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceTime: 10
-  forceDuration: .100000001
-  forceRange: 10
-  torqueRange: 2
-  endTime: 3
 --- !u!54 &1315024474
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4204,7 +4165,6 @@ GameObject:
   m_Component:
   - 4: {fileID: 1621619615}
   - 114: {fileID: 1621619614}
-  - 114: {fileID: 1621619616}
   - 54: {fileID: 1621619617}
   m_Layer: 0
   m_Name: StarSpawner
@@ -4245,22 +4205,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1457939191}
   m_RootOrder: 0
---- !u!114 &1621619616
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1621619613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b03e1b9864ea6c246aca1653e5e36a79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceTime: 10
-  forceDuration: .100000001
-  forceRange: 10
-  torqueRange: 2
-  endTime: 3
 --- !u!54 &1621619617
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5759,7 +5703,6 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 2090950300}
-  - 114: {fileID: 2090950301}
   - 54: {fileID: 2090950302}
   m_Layer: 0
   m_Name: StarSpawner 2
@@ -5780,22 +5723,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1457939191}
   m_RootOrder: 2
---- !u!114 &2090950301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2090950299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b03e1b9864ea6c246aca1653e5e36a79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceTime: 10
-  forceDuration: .100000001
-  forceRange: 10
-  torqueRange: 2
-  endTime: 3
 --- !u!54 &2090950302
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5875,7 +5802,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Burst: {fileID: 1126601084}
   Flash: {fileID: 468850119}
-  star: {fileID: 0}
+  star: {fileID: 2094841300}
+  off: {fileID: 2094841304}
 --- !u!114 &2094841303
 MonoBehaviour:
   m_ObjectHideFlags: 0

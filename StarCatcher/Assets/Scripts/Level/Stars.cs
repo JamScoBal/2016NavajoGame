@@ -9,8 +9,12 @@ public class Stars : MonoBehaviour {
     {
         if (collider.gameObject.tag == "Player")
         {
-            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        if (collider.gameObject.tag == "Player")
+        {
             StarCounter.starCount++;
         }
+        
     }
 }
