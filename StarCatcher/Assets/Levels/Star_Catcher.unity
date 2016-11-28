@@ -5754,6 +5754,7 @@ GameObject:
   - 135: {fileID: 2094841307}
   - 198: {fileID: 2094841308}
   - 199: {fileID: 2094841306}
+  - 114: {fileID: 2094841309}
   m_Layer: 15
   m_Name: Star
   m_TagString: Star
@@ -6954,6 +6955,21 @@ ParticleSystem:
     subEmitterCollision1: {fileID: 0}
     subEmitterDeath: {fileID: 0}
     subEmitterDeath1: {fileID: 0}
+--- !u!114 &2094841309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094841299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b03e1b9864ea6c246aca1653e5e36a79, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceTime: 10
+  forceDuration: .100000001
+  forceRange: 10
+  torqueRange: 2
 --- !u!1001 &2124171028
 Prefab:
   m_ObjectHideFlags: 0

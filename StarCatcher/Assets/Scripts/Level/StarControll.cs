@@ -32,11 +32,4 @@ public class StarControll : MonoBehaviour
             forceTime--;
         }
     }
-
-    public float endTime = 3;
-
-	void OnCollisionEnter()
-    {
-        Destroy(gameObject, endTime);
-    }
 }
