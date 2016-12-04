@@ -12,11 +12,13 @@ public class PlayerMovement : MonoBehaviour
     public int jumpCountMax = 1;
     public int slideDuration = 100;
     public float slideTime = 0.1f;
+    public AudioClip clip;
+    private AudioSource source;
    
     void Start ()
     {
         myCC = GetComponent<CharacterController>();
-
+        source = GetComponent<AudioSource>();
     }
 	
 	IEnumerator Slide ()
@@ -41,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpCount++;
             tempPos.y = jumpSpeed;
+            source.Play();
         }
         if(myCC.isGrounded)
         {
