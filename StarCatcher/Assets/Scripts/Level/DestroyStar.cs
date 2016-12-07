@@ -7,12 +7,14 @@ public class DestroyStar : MonoBehaviour
     public ParticleSystem Flash;
     public Transform star;
     public Renderer off;
-    public AudioClip poof;
     public AudioSource source;
+    public AudioClip clip1;
+    public AudioSource clip2;
 
     void Start()
     {
         source = GetComponent<AudioSource>();
+
     }
 
     IEnumerator Boom()
@@ -20,7 +22,7 @@ public class DestroyStar : MonoBehaviour
         yield return new WaitForSeconds(2.7f);
         Burst.Play();
         Flash.Play();
-        source.Play();
+        source.PlayOneShot(clip1);
     }
 
     void OnCollisionEnter()
@@ -40,5 +42,19 @@ public class DestroyStar : MonoBehaviour
     {
         yield return new WaitForSeconds(2.7f);
         off.enabled = false;
+    }
+
+    void OnTriggerEnter(Collider collider)
+    {
+        if (collider.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+        }
+        if (collider.gameObject.tag == "Player")
+        {
+            StarCounter.starCount++;
+
+            clip2.Play();
+        }
     }
 }
