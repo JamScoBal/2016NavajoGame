@@ -10,6 +10,7 @@ public class MenuScript : MonoBehaviour {
     public Button StartButton;
     public Button InstructionButton;
     public Button ExitButton;
+    public AudioSource button;
 
     // Use this for initialization
     void Start () {
@@ -33,21 +34,25 @@ public class MenuScript : MonoBehaviour {
     {
         InstructionMenu.enabled = true;
         StartMenu.enabled = false;
+        button.Play();
     }
 
     public void BackPress()
     {
         InstructionMenu.enabled = false;
         StartMenu.enabled = true;
+        button.Play();
     }
 
     public void StartLevel()
     {
         Application.LoadLevel(1);
+        button.Play();
     }
 
     public void EndLevel()
     {
         Application.Quit();
+        button.Play();
     }
 }
