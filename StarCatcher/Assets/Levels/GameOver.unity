@@ -225,6 +225,10 @@ Prefab:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2300004, guid: f59be762af8f01243a9ff1bbafdc52c4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f59be762af8f01243a9ff1bbafdc52c4, type: 3}
   m_IsPrefabParent: 0
@@ -2698,6 +2702,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300004, guid: f59be762af8f01243a9ff1bbafdc52c4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f59be762af8f01243a9ff1bbafdc52c4, type: 3}
   m_IsPrefabParent: 0
@@ -3327,6 +3335,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Scoretext: {fileID: 1204700485}
   button: {fileID: 1342331610}
+  white: {fileID: 11413800, guid: 61fafa8b8d33df84891ef78d08ec0ffb, type: 2}
+  logo: {fileID: 11449224, guid: c60623e917789b547a883cb91c4b5096, type: 2}
 --- !u!82 &1342331610
 AudioSource:
   m_ObjectHideFlags: 0

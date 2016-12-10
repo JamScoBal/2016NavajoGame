@@ -719,6 +719,10 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2300004, guid: f59be762af8f01243a9ff1bbafdc52c4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f59be762af8f01243a9ff1bbafdc52c4, type: 3}
   m_IsPrefabParent: 0
@@ -1422,6 +1426,7 @@ RectTransform:
   m_Children:
   - {fileID: 1965057466}
   - {fileID: 548959939}
+  - {fileID: 1340514339}
   m_Father: {fileID: 1739356513}
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
@@ -2003,6 +2008,72 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1331241278}
+--- !u!1 &1340514338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1340514339}
+  - 222: {fileID: 1340514341}
+  - 114: {fileID: 1340514340}
+  m_Layer: 5
+  m_Name: Spacebar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1340514339
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340514338}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 912172978}
+  m_RootOrder: 2
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -44, y: -78}
+  m_SizeDelta: {x: -712, y: -462}
+  m_Pivot: {x: .5, y: .5}
+--- !u!114 &1340514340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340514338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: .536764741, g: .536764741, b: .536764741, a: 1}
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: SPACEBAR
+--- !u!222 &1340514341
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1340514338}
 --- !u!1 &1342331604
 GameObject:
   m_ObjectHideFlags: 0
@@ -3215,6 +3286,10 @@ Prefab:
       value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2300002, guid: f59be762af8f01243a9ff1bbafdc52c4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300004, guid: f59be762af8f01243a9ff1bbafdc52c4, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}

@@ -16,9 +16,9 @@ public class Timer : MonoBehaviour {
 	void Update () {
         myTimer -= Time.deltaTime;
         string minutes = ((int)myTimer / 60).ToString();
-        string seconds = (myTimer % 60).ToString("f0");
+        string seconds = (myTimer % 60).ToString("00");
         timerText.text = minutes + ":" + seconds;
-        
+
         if(myTimer < 0)
         {
             Application.LoadLevel(2);

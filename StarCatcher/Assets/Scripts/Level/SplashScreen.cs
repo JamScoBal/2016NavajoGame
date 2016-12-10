@@ -14,7 +14,7 @@ public class SplashScreen : MonoBehaviour {
         yield return new WaitForSeconds(5.0f);
     }
 
-    void FadeOut()
+   void FadeOut()
     {
         splashImage.CrossFadeAlpha(0.0f, 5.0f, false);
     }

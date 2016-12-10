@@ -8,17 +8,23 @@ ModelImporter:
     100000: //RootNode
     100002: pPlane1
     100004: default
+    100006: Land3_Collider:Mesh
     400000: //RootNode
     400002: pPlane1
     400004: default
+    400006: Land3_Collider:Mesh
     2300000: pPlane1
     2300002: default
+    2300004: Land3_Collider:Mesh
     3300000: pPlane1
     3300002: default
+    3300004: Land3_Collider:Mesh
     4300000: pPlane1
     4300002: default
+    4300004: Land3_Collider:Mesh
     6400000: pPlane1
     6400002: default
+    6400004: Land3_Collider:Mesh
   materials:
     importMaterials: 1
     materialName: 0
